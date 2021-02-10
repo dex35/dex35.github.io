@@ -1,0 +1,179 @@
+* {
+    font-family: 'Roboto';
+    font-size: 14pt;
+    box-sizing: border-box;
+    outline: none;
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
+    background: #161616;
+    background-size: cover;
+}
+
+.overlay {
+    display: flex;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #00000030;
+    z-index: -1;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+    padding: 15px;
+}
+
+.about {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.about__text {
+    width: 50%;
+    color: #FFF;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.about__text--hello {
+    font-size: 35px;
+    line-height: 41px;
+    margin-bottom: 10px;
+}
+
+.about__text--fullname {
+    font-size: 90px;
+    line-height: 105px;
+    margin-bottom: 10px;
+}
+
+.about__text--status {
+    font-size: 34px;
+    line-height: 40px;
+    margin-bottom: 15px;
+}
+
+.about__image {
+    width: 50%;
+    justify-content: flex-end;
+    display: flex;
+}
+
+.about__image-ava {
+    max-width: 100%;
+    height: 512px;
+}
+
+.btns-list {
+    display: flex;
+    flex-direction: row;
+}
+
+.btn {
+    /*background: #eee;*/
+    color: #FFF;
+    font-weight: bold;
+    border-radius: 50px;
+    padding: 15px 30px;
+    font-size: 14px;
+    line-height: normal;
+    text-decoration: none;
+}
+
+.btn-social {
+    min-width: 48px;
+    min-height: 48px;
+    width: 48px;
+    height: 48px;
+    padding: 10px;
+    margin-right: 10px;
+}
+
+.btn svg {
+    width: 100%;
+    height: 100%;
+}
+
+.btn:hover,
+.btn:focus {
+    background: #a173f3;
+    color: #FFF;
+}
+
+.btn.btn-github:hover,
+.btn.btn-github:focus {
+    background: #6e5494;
+    color: #FFF;
+}
+
+.btn.btn-tg:hover,
+.btn.btn-tg:focus {
+    background: #0088cc;
+    color: #FFF;
+}
+
+.btn.btn-gmail:hover,
+.btn.btn-gmail:focus {
+    background: #D44638;
+    color: #FFF;
+}
+
+.btn.btn-insta:hover,
+.btn.btn-insta:focus {
+    background: #5851db;
+    color: #FFF;
+}
+
+.btn.btn-vk:hover,
+.btn.btn-vk:focus {
+    background: #45668e;
+    color: #FFF;
+}
+
+.container {
+    width: 100%;
+}
+
+.footer__links {color: #FFF;display: flex;font-size: 13px;bottom: 15px;position: absolute;}
+
+.footer__links a {
+    color: #FFF;
+    font-size: inherit;
+    text-decoration: none;
+}
+
+.footer__links a:hover {
+    color: #5851db;
+}
+
+.footer__links--sgnm {
+    font-size: inherit;
+    margin-right: 30px;
+}
+
+.footer__links--beget {
+    font-size: inherit;
+}
+
+/* media */
+@media (min-width: 1920px) {
+    .container {
+        max-width: 1440px;
+    }
+}
+
+@media (min-width: 1440px) {
+    .container {
+        max-width: 1366px;
+    }
+}
