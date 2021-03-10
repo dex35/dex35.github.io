@@ -6,81 +6,65 @@
 }
 
 body {
-    margin: 0px;
-    padding: 0px;
+    margin: 0;
+    padding: 0;
     overflow-x: hidden;
     background: #161616;
     background-size: cover;
 }
 
-.overlay {
-    display: flex;
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background: #00000030;
-    z-index: -1;
+.container {
+    padding: 0 15px;
+    margin: 0 auto;
 }
 
 .wrapper {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     height: 100vh;
-    flex-direction: column;
-    padding: 15px;
 }
 
 .about {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
-
-.about__text {
     width: 50%;
     color: #FFF;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
 }
 
-.about__text--hello {
+.about__hello {
     font-size: 35px;
     line-height: 41px;
     margin-bottom: 10px;
 }
 
-.about__text--fullname {
+.about__name {
     font-size: 90px;
     line-height: 105px;
     margin-bottom: 10px;
 }
 
-.about__text--status {
+.about__status {
     font-size: 34px;
     line-height: 40px;
     margin-bottom: 15px;
 }
 
-.about__image {
+.image {
     width: 50%;
-    justify-content: flex-end;
-    display: flex;
-}
-
-.about__image-ava {
-    max-width: 100%;
     height: 512px;
+    max-width: 512px;
 }
 
-.btns-list {
+.image img {
+    width: 100%;
+    height: 100%;
+}
+
+.about__buttons {
     display: flex;
     flex-direction: row;
 }
 
 .btn {
-    /*background: #eee;*/
     color: #FFF;
     font-weight: bold;
     border-radius: 50px;
@@ -90,7 +74,7 @@ body {
     text-decoration: none;
 }
 
-.btn-social {
+.btn_social {
     min-width: 48px;
     min-height: 48px;
     width: 48px;
@@ -110,59 +94,60 @@ body {
     color: #FFF;
 }
 
-.btn.btn-github:hover,
-.btn.btn-github:focus {
+.btn.btn_github:hover,
+.btn.btn_github:focus {
     background: #6e5494;
     color: #FFF;
 }
 
-.btn.btn-tg:hover,
-.btn.btn-tg:focus {
+.btn.btn_tg:hover,
+.btn.btn_tg:focus {
     background: #0088cc;
     color: #FFF;
 }
 
-.btn.btn-gmail:hover,
-.btn.btn-gmail:focus {
+.btn.btn_gmail:hover,
+.btn.btn_gmail:focus {
     background: #D44638;
     color: #FFF;
 }
 
-.btn.btn-insta:hover,
-.btn.btn-insta:focus {
+.btn.btn_inst:hover,
+.btn.btn_inst:focus {
     background: #5851db;
     color: #FFF;
 }
 
-.btn.btn-vk:hover,
-.btn.btn-vk:focus {
+.btn.btn_vk:hover,
+.btn.btn_vk:focus {
     background: #45668e;
     color: #FFF;
 }
 
-.container {
-    width: 100%;
+.footer-links {
+    color: #FFF;
+    display: flex;
+    font-size: 13px;
+    bottom: 15px;
+    position: absolute;
 }
 
-.footer__links {color: #FFF;display: flex;font-size: 13px;bottom: 15px;position: absolute;}
-
-.footer__links a {
+.footer-links a {
     color: #FFF;
     font-size: inherit;
     text-decoration: none;
 }
 
-.footer__links a:hover {
+.footer-links a:hover {
     color: #5851db;
 }
 
-.footer__links--sgnm {
+.footer-links__item {
     font-size: inherit;
-    margin-right: 30px;
 }
 
-.footer__links--beget {
-    font-size: inherit;
+.footer-links__item:not(:last-child) {
+    margin-right: 30px;
 }
 
 /* media */
